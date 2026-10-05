@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>متجر الموبايل</title>
+<meta name="theme-color" content="#7c5cff">
+<meta name="description" content="جرابات وإكسسوارات موبايل بأحسن سعر - اطلب أونلاين">
+<style>
+:root{--bg:#f6f7fb;--card:#fff;--tx:#1a1d2e;--mu:#6b7090;--ac:#7c5cff;--ac2:#4cc9f0;--bd:#e5e7f2}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font-family:"Segoe UI",Tahoma,Arial,sans-serif}
+header{padding:14px 18px;display:flex;justify-content:space-between;align-items:center;background:linear-gradient(135deg,var(--ac),var(--ac2));color:#fff}
+h1{margin:0;font-size:20px}
+.hero{padding:26px 18px;text-align:center}.hero h2{margin:0 0 6px;font-size:24px}.hero p{margin:0;color:var(--mu)}
+main{max-width:1000px;margin:auto;padding:0 14px 30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:14px}
+.p{background:var(--card);border-radius:18px;overflow:hidden;box-shadow:0 4px 14px rgba(40,40,90,.08);display:flex;flex-direction:column}
+.p img{width:100%;aspect-ratio:1;object-fit:cover}
+.pb{padding:12px;display:flex;flex-direction:column;gap:8px;flex:1}.pb b{font-size:15px}.pr{color:var(--ac);font-weight:700;font-size:17px}
+button{font:inherit;cursor:pointer;border:0;border-radius:12px;padding:10px 14px;background:var(--ac);color:#fff}
+button.g{background:transparent;border:1px solid var(--bd);color:var(--tx)}.pb button{margin-top:auto}
+.ov{position:fixed;inset:0;background:rgba(0,0,0,.5);display:none;z-index:10;align-items:flex-end;justify-content:center}.ov.o{display:flex}
+.sh{background:var(--card);width:100%;max-width:480px;max-height:92%;overflow:auto;border-radius:20px 20px 0 0;padding:18px}
+input,textarea,select{width:100%;font:inherit;padding:11px;margin:5px 0;border-radius:10px;border:1px solid var(--bd);background:var(--bg);color:var(--tx)}
+label.pay{display:block;padding:10px;border:1px solid var(--bd);border-radius:10px;margin:6px 0}label.pay input{width:auto}
+.mu{color:var(--mu);font-size:14px}.hide{display:none}
+.dsc{background:#ff4d6d;color:#fff;border-radius:20px;padding:2px 10px;font-size:12px;align-self:flex-start}s.mu{margin-right:6px}
+input,textarea,select{font-size:16px}button{min-height:44px}.grid{grid-template-columns:repeat(2,1fr);gap:10px}@media(min-width:600px){.grid{grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:14px}}.sh{padding-bottom:calc(18px + env(safe-area-inset-bottom,0px))}.wa{position:fixed;bottom:calc(16px + env(safe-area-inset-bottom,0px));left:16px;width:54px;height:54px;border-radius:50%;background:#25d366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:26px;text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.25);z-index:5}
+.r2{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--bd)}
+
+/* ===== 3D look ===== */
+body{background:radial-gradient(1200px 500px at 50% -100px,rgba(124,92,255,.18),transparent),var(--bg)}
+header{position:sticky;top:0;z-index:6;box-shadow:0 10px 28px rgba(124,92,255,.38)}
+.hero h2{text-shadow:0 2px 0 #fff,0 7px 14px rgba(124,92,255,.35)}
+.scene{perspective:700px;height:120px;display:flex;justify-content:center;align-items:center;margin-bottom:6px}
+.cube{width:76px;height:76px;position:relative;transform-style:preserve-3d;animation:spin 14s linear infinite}
+.cube i{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:38px;font-style:normal;border-radius:14px;background:linear-gradient(135deg,rgba(124,92,255,.22),rgba(76,201,240,.22));border:1px solid rgba(124,92,255,.45);box-shadow:inset 0 0 18px rgba(255,255,255,.5)}
+.cube i:nth-child(1){transform:translateZ(38px)}.cube i:nth-child(2){transform:rotateY(90deg) translateZ(38px)}.cube i:nth-child(3){transform:rotateY(180deg) translateZ(38px)}.cube i:nth-child(4){transform:rotateY(-90deg) translateZ(38px)}.cube i:nth-child(5){transform:rotateX(90deg) translateZ(38px)}.cube i:nth-child(6){transform:rotateX(-90deg) translateZ(38px)}
+@keyframes spin{from{transform:rotateX(-22deg) rotateY(0)}to{transform:rotateX(-22deg) rotateY(360deg)}}
+.grid{perspective:1000px}
+.p{transform-style:preserve-3d;transition:transform .18s ease,box-shadow .2s;will-change:transform;box-shadow:0 1px 0 #fff inset,0 12px 22px rgba(40,40,90,.14),0 24px 44px rgba(124,92,255,.12)}
+.p:active{transform:scale(.97)}
+.pb{transform:translateZ(24px)}.p img{transform:translateZ(8px)}
+.dsc{background:linear-gradient(135deg,#ff4d6d,#ff8a5c);box-shadow:0 3px 8px rgba(255,77,109,.4)}
+button:not(.g){box-shadow:0 5px 0 rgba(60,40,140,.45),0 10px 18px rgba(124,92,255,.35);transition:transform .1s,box-shadow .1s}
+button:not(.g):active{transform:translateY(4px);box-shadow:0 1px 0 rgba(60,40,140,.45),0 3px 6px rgba(124,92,255,.3)}
+.sh{box-shadow:0 -12px 40px rgba(0,0,0,.28)}
+.wa{box-shadow:0 5px 0 #168a45,0 10px 18px rgba(0,0,0,.28)}
+@media(prefers-reduced-motion:reduce){.cube{animation:none}.p{transition:none}}
+</style>
+</head>
+<body>
+<header><h1>📱 متجر الموبايل</h1><span id="hd"></span></header>
+<div class="hero"><div class="scene"><div class="cube"><i>📱</i><i>🛡️</i><i>🔌</i><i>🎧</i><i>🔋</i><i>💎</i></div></div><h2>جرابات وإكسسوارات بأحسن سعر</h2><p>اختار منتجك واطلبه في دقيقة</p><button class="g" style="margin-top:10px" onclick="op('sp')">🚚 رسوم الشحن لكل محافظة</button></div>
+<a class="wa" id="wa" target="_blank" rel="noopener" aria-label="واتساب">💬</a>
+<main><div class="grid" id="g"><p class="mu">جاري التحميل...</p></div></main>
+
+<div class="ov" id="au" onclick="if(event.target===this)cl('au')"><div class="sh">
+<h3 id="at" style="margin-top:0">تسجيل الدخول</h3>
+<input id="nm" class="hide" placeholder="الاسم"><input id="em" type="email" placeholder="الإيميل"><input id="pw" type="password" placeholder="الباسورد (6 حروف على الأقل)">
+<button style="width:100%" onclick="go()" id="ab">دخول</button>
+<p class="mu" id="ae"></p>
+<button class="g" style="width:100%" onclick="tg()" id="tb">معنديش حساب؟ سجّل</button>
+</div></div>
+
+<div class="ov" id="bo" onclick="if(event.target===this)cl('bo')"><div class="sh">
+<h3 style="margin-top:0" id="bt"></h3>
+<input id="q" type="number" min="1" value="1" oninput="tt()"><input id="ph" placeholder="رقم التليفون" inputmode="tel">
+<textarea id="ad" rows="2" placeholder="العنوان بالتفصيل"></textarea>
+<select id="sh" onchange="fc();tt()" style="display:none"></select>
+<select id="ct" style="display:none"></select>
+<label class="pay"><input type="radio" name="pay" value="كاش عند الاستلام" checked onchange="pc()"> 💵 كاش عند الاستلام</label>
+<label class="pay"><input type="radio" name="pay" value="إنستا باي" onchange="pc()"> 📲 إنستا باي</label>
+<p class="mu hide" id="ip">حوّل على: <b id="iph"></b> وابعت لقطة التحويل على واتساب.</p>
+<p class="mu" id="bk"></p>
+<p><b>الإجمالي: <span id="tot"></span> جنيه</b></p>
+<button style="width:100%" onclick="order()" id="ob">تأكيد الطلب</button>
+<button class="g" style="width:100%;margin-top:8px" onclick="cl('bo')">إلغاء</button>
+</div></div>
+
+<div class="ov" id="sp" onclick="if(event.target===this)cl('sp')"><div class="sh"><h3 style="margin-top:0">🚚 رسوم الشحن</h3><div id="spl"></div><button class="g" style="width:100%;margin-top:10px" onclick="cl('sp')">إغلاق</button></div></div>
+
+<div class="ov" id="mo" onclick="if(event.target===this)cl('mo')"><div class="sh"><h3 style="margin-top:0">📦 طلباتي</h3><div id="mol"></div><button class="g" style="width:100%;margin-top:10px" onclick="cl('mo')">إغلاق</button></div></div>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script>
+// ===== حط إعدادات Firebase بتاعتك هنا (نفس اللي في لوحة التحكم) =====
+const CFG={apiKey:"AIzaSyAucar6uW19o-5hiXOdLXmLbVboSFAYibk",authDomain:"store-6bbc3.firebaseapp.com",projectId:"store-6bbc3",appId:"1:375640440630:web:459436af82708b3e7c3d97"};
+const INSTAPAY="bslox201008340114@instapay",WHATSAPP="201008340114";
+firebase.initializeApp(CFG);const auth=firebase.auth(),db=firebase.firestore();db.settings({experimentalAutoDetectLongPolling:true});
+const $=id=>document.getElementById(id);$("iph").textContent=INSTAPAY;$("wa").href="https://wa.me/"+WHATSAPP;
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+let P={},cur=null,reg=false;
+const op=i=>$(i).classList.add("o"),cl=i=>$(i).classList.remove("o");
+const BW='style="color:#fff;border-color:#fff;padding:6px 10px"';
+function hdr(u){$("hd").innerHTML=u?`<button class="g" ${BW} onclick="op('mo')">📦 طلباتي</button> <button class="g" ${BW} onclick="auth.signOut()">خروج</button>`:`<button class="g" ${BW} onclick="op('au')">دخول / تسجيل</button>`}
+let uo=null,prev=null;
+auth.onAuthStateChanged(u=>{hdr(u);if(uo){uo();uo=null}prev=null;$("mol").innerHTML="";
+ if(u)uo=db.collection("orders").where("uid","==",u.uid).onSnapshot(s=>{const ds=s.docs.map(d=>({id:d.id,...d.data()})).sort((x,y)=>y.at-x.at);
+  if(prev)ds.forEach(o=>{if(o.status==="تم الشحن"&&prev[o.id]&&prev[o.id]!=="تم الشحن")alert("🚚 طلبك ("+o.product+") خرج للشحن وهيوصلك قريباً!")});
+  prev={};ds.forEach(o=>prev[o.id]=o.status);
+  $("mol").innerHTML=ds.map(o=>{const d=o.status==="تم الشحن";return `<div class="r2" style="display:block;border-right:5px solid ${d?"#2ecc71":"#ffa726"};padding-right:10px"><b>${esc(o.product)}</b> × ${+o.qty}<br><span class="mu">${+o.total} جنيه — ${esc(o.pay)}</span><br>${d?"✅ خرج للشحن 🚚":"⏳ جاري تجهيز الطلب"}</div>`}).join("")||'<p class="mu">مفيش طلبات لسه</p>'},()=>{})});
+let PD=[],ST={discount:0,shipping:[]};
+const unit=p=>Math.round(p.price*(1-(+ST.discount||0)/100));
+function draw(){P={};const dc=+ST.discount>0;$("g").innerHTML=PD.map(d=>{const p=d.data();P[d.id]=p;return `<div class="p"><img loading="lazy" src="${esc(p.img)}" alt=""><div class="pb"><b>${esc(p.name)}</b><span class="pr">${unit(p)} جنيه${dc?`<s class="mu">${+p.price}</s>`:""}</span>${dc?`<span class="dsc">خصم ${+ST.discount}%</span>`:""}<button onclick="buy('${d.id}')">اشتري الآن</button></div></div>`}).join("")||'<p class="mu">قريباً... منتجات جديدة</p>'}
+db.collection("products").orderBy("at","desc").onSnapshot(s=>{PD=s.docs;draw()},e=>{$("g").innerHTML=`<p class="mu">تعذّر تحميل المنتجات (${esc(e.code||e.message)})</p>`});
+db.collection("settings").doc("store").onSnapshot(d=>{ST=Object.assign({discount:0,shipping:[]},d.exists?d.data():{});draw();fillSh()},()=>{});
+function fillSh(){const x=ST.shipping||[];$("sh").style.display=x.length?"":"none";$("sh").innerHTML='<option value="">اختار المحافظة</option>'+x.map((y,i)=>`<option value="${i}">${esc(y.name)} — ${+y.fee} جنيه شحن</option>`).join("");fc();drawSp()}
+function gv(){const x=ST.shipping||[];return $("sh").value===""?null:x[+$("sh").value]}
+function fc(){const g=gv(),c=g&&g.centers||[];$("ct").style.display=c.length?"":"none";$("ct").innerHTML='<option value="">اختار المركز / المدينة</option>'+c.map(m=>`<option>${esc(m)}</option>`).join("")}
+function fee(){const g=gv();return g?+g.fee:0}
+function drawSp(){$("spl").innerHTML=(ST.shipping||[]).map(y=>`<div class="r2"><span>${esc(y.name)}</span><b>${+y.fee} جنيه</b></div>`).join("")||'<p class="mu">رسوم الشحن هتتحدد قريباً</p>'}
+function tg(){reg=!reg;$("nm").classList.toggle("hide",!reg);$("at").textContent=reg?"إنشاء حساب":"تسجيل الدخول";$("ab").textContent=reg?"تسجيل":"دخول";$("tb").textContent=reg?"عندي حساب؟ دخول":"معنديش حساب؟ سجّل"}
+async function go(){$("ae").textContent="";try{
+ if(reg){const n=$("nm").value.trim();if(!n)return $("ae").textContent="اكتب اسمك";const c=await auth.createUserWithEmailAndPassword($("em").value,$("pw").value);await c.user.updateProfile({displayName:n});hdr(auth.currentUser)}
+ else await auth.signInWithEmailAndPassword($("em").value,$("pw").value);
+ cl("au");if(cur)buy(cur)}catch(e){$("ae").textContent="تأكد من الإيميل والباسورد"}}
+function buy(id){cur=id;if(!auth.currentUser)return op("au");$("bt").textContent=P[id].name;$("q").value=1;tt();op("bo")}
+function tt(){const q=Math.max(1,+$("q").value||1),u=unit(P[cur]),f=fee();$("tot").textContent=u*q+f;$("bk").textContent=u+" × "+q+(f?" + شحن "+f:"")}
+function pc(){$("ip").classList.toggle("hide",document.querySelector("input[name=pay]:checked").value!=="إنستا باي")}
+async function order(){const sp=gv(),f=sp?+sp.fee:0,u0=unit(P[cur]),u=auth.currentUser,ph=$("ph").value.trim(),ad=$("ad").value.trim(),q=Math.max(1,+$("q").value||1);
+ if(!ph||!ad)return alert("اكتب التليفون والعنوان");if((ST.shipping||[]).length&&!sp)return alert("اختار المحافظة");if(sp&&(sp.centers||[]).length&&!$("ct").value)return alert("اختار المركز");$("ob").textContent="جاري الإرسال...";
+ const pay=document.querySelector("input[name=pay]:checked").value;
+ try{await db.collection("orders").add({uid:u.uid,name:u.displayName||u.email,phone:ph,address:ad,product:P[cur].name,qty:q,total:u0*q+f,discount:+ST.discount||0,shipArea:sp?sp.name:"",shipCenter:sp?$("ct").value:"",shipFee:f,pay,status:"جديد",at:Date.now()});
+ cl("bo");alert("تم استلام طلبك ✅ هنتواصل معاك قريب");if(pay==="إنستا باي")window.open("https://wa.me/"+WHATSAPP,"_blank")}
+ catch(e){alert("حصل خطأ، جرّب تاني")}$("ob").textContent="تأكيد الطلب"}
+
+(function(){const g=$("g");let el=null;const rs=()=>{if(el)el.style.transform=""};
+g.addEventListener("pointermove",e=>{const c=e.target.closest(".p");if(el&&el!==c)rs();el=c;if(!c)return;const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform=`rotateY(${x*14}deg) rotateX(${-y*14}deg) translateZ(8px)`});
+["pointerleave","pointerup","pointercancel"].forEach(t=>g.addEventListener(t,rs))})();
+</script>
+</body>
+</html>
